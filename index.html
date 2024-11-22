@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=PT+Sans+Caption:wght@400;700&family=Pacifico&family=Righteous&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bookmark</title>
+    <link rel="shortcut icon" href="image/favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="CSS/all.min.css">
+    <link rel="stylesheet" href="CSS/bootstrap.min.css">
+    <link rel="stylesheet" href="CSS/style.css">
+    <link rel="stylesheet" href="CSS/media.css">
+</head>
+<body>
+    <div class="container py-5 vh-100">
+
+        <div class="content pb-4">
+
+            <div class="pt-3 pb-5 header position-relative">
+                <h1 class="m-auto">Bookmarker</h1>
+            </div>
+            <div>
+                
+                <h2 class="py-4 fs-4 text-center"> <i class="fa-solid fa-bookmark me-2 fs-3"></i> Bookmark your favorite sites
+                    <i class="fa-solid fa-bookmark ms-2 fs-3"></i>
+                </h2>
+                <form>
+
+                    <div class="mb-3">
+                        <label for="bookmarkName" class="text-start mb-2 fw-bolder">
+                            <i class="fa-solid fa-book-bookmark me-1"></i> Site Name
+                        </label>
+                        <input oninput="vaildateInputs(this)" type="text" id="bookmarkName" placeholder="Bookmark Name" class="form-control">
+                        <div class="d-none rounded-2 bg-danger bg-opacity-75 text-center fs-3 my-2 p-3">
+                            <p>Bookmark Name start with at least 3 characters</p>
+                        </div>
+                    </div>
+                    <div class="my-3">
+                        <label for="websiteURL" class="text-start mb-2 fw-bolder">
+                            <i class="fa-solid fa-link me-1"></i> Site URL
+                        </label>
+                        <input oninput="vaildateInputs(this)" type="url" id="websiteURL" placeholder="Website URL" class="form-control">
+                        <div class=" d-none rounded-2 bg-danger bg-opacity-75 text-center fs-3 my-2 p-3">
+                            <p>Bookmark Name start with at least 3 characters</p>
+                        </div>
+                    </div>
+        
+                    <button type="submit" class="btn text-white position-relative translate-middle-x btn-submit">Submit</button>
+                </form>
+            </div>
+        </div>
+        <table class="w-100 mt-4 bg-white text-center">
+            <thead>
+                <tr class="row p-2">
+                    <th class="col-3 ">Index</th>
+                    <th class="col-3 ">Website Name</th>
+                    <th class="col-3 ">Visit</th>
+                    <th class="col-3 ">Delete</th>
+                </tr>
+            </thead>
+            <tbody class="myTable">
+            </tbody>
+        </table>
+    </div>
+    <script src="JS/index.js"></script>
+</body>
+</html>

@@ -1,0 +1,32 @@
+
+
+@media  (min-width:500px) {
+    h1::before {
+        width: 56%;
+        left: 22%;
+    }
+}
+@media  (min-width:768px) {
+    h1::before {
+        width: 39%;
+        left: 30%;
+    }
+}
+@media  (min-width:992px) {
+    h1::before {
+        width: 29%;
+        left: 35%;
+    }
+}
+@media  (min-width:1200px) {
+    h1::before {
+        width: 24.5%;
+        left: 37.5%;
+    }
+}
+@media  (min-width:1400px) {
+    h1::before {
+        width: 21.3%;
+        left: 39%;
+    }
+}

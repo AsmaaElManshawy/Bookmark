@@ -1,0 +1,72 @@
+::selection {
+    background-color: #fec260;
+    color: #352e28;
+}
+
+body {
+    background-color: #F7ECDE;
+    font-family: "PT Sans Caption", sans-serif;
+}
+
+.header, .content {
+    border-bottom: 2px dotted black;
+}
+
+h1 {
+    font-size: 50px;
+    font-family: "Pacifico", cursive;
+    width: fit-content;
+}
+
+h1::before {
+    content: "";
+    position: absolute;
+    width: 56%;
+    height: 17%;
+    left: 22%;
+    bottom: 40%;
+    background-color: #fec260;
+    transition: height 0.35s;
+    z-index: -1;
+}
+
+h1:hover::before {
+    height: 31%;
+}
+
+h2 {
+    font-family: "Righteous", cursive;
+    font-size: 25px;
+    background-image: linear-gradient(to right, #3ca55c, #b5ac49);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.form-control:focus {
+    border-color: orange;
+    box-shadow: 0 0 0 .25rem rgba(255, 166, 0, 0.25);
+}
+
+form .btn {
+    --bs-btn-padding-x: 3rem;
+    --bs-btn-padding-y: 0.3rem;
+    left: 50%;
+    background-color: rgb(229, 86, 47);
+}
+
+form .btn:hover,
+form .btn:focus {
+    background-color: rgb(209, 81, 45);
+    color: white;
+}
+
+.btn-visit {
+    background-color: #a4be21;
+    color: white;
+}
+
+.btn-visit:hover,
+.btn-visit:focus {
+    background-color: #8A9E23;
+    color: white;
+}
